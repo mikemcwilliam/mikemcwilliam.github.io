@@ -1,0 +1,14 @@
+# Site settings
+title: Mike McWilliam
+email: mjmcwilliam@outlook.com
+#description: > # this means to ignore newlines until "baseurl:"
+#  ...
+#baseurl: "/mm" # the subpath of your site, e.g. /blog
+#baseurl: "/livingseas" # the subpath of your site, e.g. /blog
+url: "mikemcwilliam.github.io" # the base hostname & protocol for your site
+twitter_username: mikemcwilliam23
+github_username:  mjmcwilliam
+
+# Build settings
+markdown: kramdown
+permalink: pretty
