@@ -12,3 +12,7 @@ github_username:  mjmcwilliam
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+
+plugins:
+  - jekyll-sitemap
