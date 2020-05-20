@@ -1,4 +1,5 @@
 {% for post in paginator.posts %}
+{% unless post.categories contains 'research' %}
     {% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="column column-33">
             <div class="preview-panel">
@@ -9,6 +10,7 @@
            </div>
         </div>
 {% cycle 'end row' : '', '', '</div>' %}
+ {% endunless %}
 {% endfor %}
 {% cycle 'end row' : '', '</div>', '</div>' %}
 

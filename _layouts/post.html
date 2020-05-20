@@ -3,12 +3,14 @@ layout: default
 ---
 <div class="post">
   <div class="post-nav">
-    {% if page.next.url %}
-      <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
+
+    {% if page.next_in_category.url %}
+      <a class="nav-item" href="{{ page.next_in_category.url | prepend: site.baseurl }}">&laquo; Prev</a>
     {% endif %}
-    {% if page.previous.url %}
-      <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
+    {% if page.previous_in_category.url %}
+      <a class="nav-item" href="{{ page.previous_in_category.url | prepend: site.baseurl }}">Next &raquo;</a>
     {% endif %}
+
   </div>
 
   <header class="post-header">
