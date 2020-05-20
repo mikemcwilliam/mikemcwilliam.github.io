@@ -37,3 +37,43 @@ $grey-color-dark:  darken($grey-color, 25%);
 .pagination {
     text-align: center;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Share buttons */
+ .sharebuttons {
+   margin: 0 0 0 0;
+ }
+
+ .sharebuttons ul {
+   margin: 0 0 0 0;
+   text-align: center;
+ }
+
+ .sharebuttons ul li {
+   display: inline;
+ }
+
+ .sharebuttons ul li a {
+   text-decoration: none;
+ }
+
+ .sharebuttons ul li svg {
+   width: 20px;
+   height: 20px;
+   margin-left: -75px;
+   fill: #828282;
+ }
