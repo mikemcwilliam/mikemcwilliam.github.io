@@ -1,4 +1,6 @@
-{% for post in paginator.posts %}
+
+{% assign sortedPosts = paginator.posts | sort: 'order' %}
+{% for post in  sortedPosts %}
 {% unless post.categories contains 'research' %}
     {% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="column column-33">
@@ -13,7 +15,6 @@
  {% endunless %}
 {% endfor %}
 {% cycle 'end row' : '', '</div>', '</div>' %}
-
 
 
 
