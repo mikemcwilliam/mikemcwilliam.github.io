@@ -6,19 +6,23 @@
   <body>
 
     <main class="wrapper">
-      
+
       {% include header.html %}
 
       <div class="container">
         {{ content }}
 
+
         {% include footer.html %}
       </div>
-    
+
     </main>
 
     {% include scripts.html %}
-    
+
+    <script type="text/javascript" src="/js/lightbox-plus-jquery.js"></script>
+    <link rel="stylesheet" href="/css/lightbox.css">
+
   </body>
 
 </html>
