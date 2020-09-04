@@ -19,3 +19,6 @@ plugins:
 
 paginate: 9
 paginate_path: /page:num/
+
+
+exclude: ['old_scripts', 'new_scripts', 'issues.txt']

@@ -1,0 +1,51 @@
+
+ISSUES
+
+- Paginate images , load more.. 
+
+- Google search
+https://victor2code.github.io/blog/2019/07/04/jekyll-github-pages-appear-on-Google.html
+https://github.com/mmistakes/minimal-mistakes/issues/918
+add https
+
+
+
+
+
+SOLVED
+
+- Preview images: lightbox2
+https://jekyllcodex.org/without-plugin/lightbox
+https://talk.jekyllrb.com/t/how-to-install-jekyll-lightbox-plugin/4340
+https://www.lokeshdhakar.com/projects/lightbox2/
+
+- Ordering now by date. 
+
+- Add Icons:
+https://sourabhbajaj.com/blog/2017/10/29/adding-social-media-share-icons-to-jekyll/
+https://simpleicons.org
+https://iconmonstr.com
+
+- Pagination:
+https://blog.webjeda.com/jekyll-pagination/ 
+
+- Theme: 
+https://github.com/midzer/urban-theme
+
+- Add a category (i.e. research):
+https://blog.webjeda.com/jekyll-categories/
+
+- Hide categories from home page
+hidden: true
+https://stackoverflow.com/questions/46729218/jekyll-exclude-tag-from-pagination
+unless (with endunless)
+https://github.com/jekyll/jekyll-help/issues/31
+
+git pull
+git add -- all
+git commit -m "new thing"
+git push
+
+
+
+
