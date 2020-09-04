@@ -5,12 +5,13 @@ order: 2
 ---
 
 <p>
-I’m interested in the diversity and demography of marine organisms (mostly corals), and how human activities are influencing ecosystem functions.
+I’m interested in the diversity, biogeography and demography of marine organisms (mostly corals), and how human activities are influencing ecosystem functions.
 </p><p>
   <b> Some papers:</b>
 </p>
 
-{% for post in site.categories.research %}
+
+{% for post in site.research %}
     {% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="column column-33">
             <div class="preview-panel">

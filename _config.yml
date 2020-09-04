@@ -16,9 +16,19 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - pagemaster
 
-paginate: 9
+paginate: 12
 paginate_path: /page:num/
 
+exclude: ['old_scripts',  'notes.txt']
 
-exclude: ['old_scripts', 'new_scripts', 'issues.txt']
+
+collections:
+  posts:
+    output: TRUE
+    source: gallery.csv
+    id_key: name
+    layout: post
+  research:
+   output: TRUE
