@@ -20,7 +20,7 @@ plugins:
 
 #original ..
 paginate: 9
-paginate_path: /page:num/
+paginate_path: /page/:num/
 
 
 exclude: ['old_scripts',  'notes.txt']

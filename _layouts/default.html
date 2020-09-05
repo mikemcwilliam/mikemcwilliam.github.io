@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body>
-
+<script src="https://cdn.rawgit.com/J911/jekyll-infinite-scroll/master/lib/InfiniteScroll.js"></script>
     <main class="wrapper">
 
       {% include header.html %}
@@ -23,6 +23,12 @@
         <script type="text/javascript" src="/js/lightbox-plus-jquery.js"></script>
         <link rel="stylesheet" href="/css/lightbox.css">
 
+        <script src='lib/InfiniteScroll.js'></script>
+        <script>
+            var postWrapperId = 'card-wrapper';
+            var paginatePath = '/page/'
+            new InfiniteScroll(paginatePath, postWrapperId);
+        </script>
 
   </body>
 
