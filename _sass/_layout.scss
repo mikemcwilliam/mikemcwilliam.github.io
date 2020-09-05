@@ -30,10 +30,10 @@
 /**
  * override column size for mobile
  */
-@media (max-width: 10.0rem) {
+@media (max-width: 40.0rem) {
     .row .column.column-33, .row .column.column-34 {
-        flex: 0 0 10%;
-        max-width: 10%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
