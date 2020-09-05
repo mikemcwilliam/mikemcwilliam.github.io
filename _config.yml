@@ -18,8 +18,10 @@ plugins:
   - jekyll-paginate
   - pagemaster
 
-paginate: 12
+#original ..
+paginate: 9
 paginate_path: /page:num/
+
 
 exclude: ['old_scripts',  'notes.txt']
 

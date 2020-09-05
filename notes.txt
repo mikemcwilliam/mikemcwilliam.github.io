@@ -1,4 +1,7 @@
 
+
+Dimensions: thumb: 300*300cm @ 1px/cm
+
 CODE
 
 # GitHub----
