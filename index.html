@@ -2,24 +2,31 @@
 layout: default
 ---
 
-<div class="card--group" id="card-wrapper">
-    {%- if paginator.posts.size > 0 -%}
-    {%- for post in paginator.posts -%}
 
 
-    {% cycle 'add row' : '<div class="row">', '', '' %}
-        <div class="column column-33">
-            <div class="preview-panel">
+  {% if paginator.page %}
+    {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
+    {% assign currentPage = paginator.page %}
+  {% else %}
+    {% assign offset = 0 %}
+    {% assign currentPage = 1 %}
+  {% endif %}
 
-              <a href="{{ site.baseurl }}/images/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}">
-                <img src="{{ site.baseurl }}/images/{{ post.preview }}" /></a>
+  <div id="blogContainer" class="postContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+    {% for post in site.posts limit:paginator.per_page offset:offset %}
+        {% cycle 'add row' : '<article class="row">', '', '' %}
+            <div class="column column-33">
+                <div class="preview-panel">
+                  <a href="{{ site.baseurl }}/images/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}">
+                    <img src="{{ site.baseurl }}/images/{{ post.preview }}" /></a>
+               </div>
+            </div>
+    {% cycle 'end row' : '', '', '</article>' %}
+    {% endfor %}
+  </div>
 
-           </div>
-        </div>
-{% cycle 'end row' : '', '', '</div>' %}
-
-
-
-    {%- endfor -%}
-{%- endif -%}
-</div>
+  {% assign postCount = site.posts | size %}
+  {% assign postsCovered = paginator.per_page | plus:offset %}
+  {% if postsCovered < postCount %}
+  <button class="loadMore">Older</button>
+  {% endif %}

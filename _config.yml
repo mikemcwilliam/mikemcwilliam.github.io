@@ -19,9 +19,8 @@ plugins:
   - pagemaster
 
 #original ..
-paginate: 9
-paginate_path: /page/:num/
-
+paginate: 12
+#paginate_path: /page:num
 
 exclude: ['old_scripts',  'notes.txt']
 
