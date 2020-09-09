@@ -72,7 +72,3 @@ unless (with endunless)
 https://github.com/jekyll/jekyll-help/issues/31
 
 
-Use this? 
-
-<img src="{site.baseurl}/images/{{ post.date | date: "%Y-%m-%d" }}.jpg" alt="" />
-
