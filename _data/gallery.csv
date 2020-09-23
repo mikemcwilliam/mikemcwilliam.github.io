@@ -1,38 +1,39 @@
-name,categories,image_path,preview,date,year,location,title
-2013-01-01-png,image,2013_01_01.png,2013_01_01x.png,01/01/2013,2013,Port Phillip Bay,Goatfish
-2013-01-02-png,image,2013_01_02.png,2013_01_02x.png,02/01/2013,2013,Port Phillip Bay,Cuttlefish
-2013-01-04-png,image,2013_01_04.png,2013_01_04x.png,04/01/2013,2013,Port Phillip Bay,Mirror
-2013-02-01-png,image,2013_02_01.png,2013_02_01x.png,01/02/2013,2013,Port Phillip Bay,Sedragon
-2013-06-01-png,image,2013_06_01.png,2013_06_01x.png,01/06/2013,2013,Whitsundays,Anemonefish
-2013-11-01-png,image,2013_11_01.png,2013_11_01x.png,01/11/2013,2013,Coral Sea,Diver
-2014-03-17-png,image,2014_03_17.png,2014_03_17x.png,17/03/2014,2014,Maldives,Mantis
-2014-04-01-png,image,2014_04_01.png,2014_04_01x.png,01/04/2014,2014,Maldives,Flatworm
-2015-09-01-png,image,2015_09_01.png,2015_09_01x.png,01/09/2015,2015,Lizard,Cuttlefish Liz.
-2016-03-01-png,image,2016_03_01.png,2016_03_01x.png,01/03/2016,2016,Great Barrier Reef,Rib reef
-2016-04-01-png,image,2016_04_01.png,2016_04_01x.png,01/04/2016,2016,Great Barrier Reef,Bleached table
-2016-06-01-png,image,2016_06_01.png,2016_06_01x.png,01/06/2016,2016,Kauai,Napali
-2016-07-01-png,image,2016_07_01.png,2016_07_01x.png,01/07/2016,2016,Heron Is.,Trout hiding
-2016-12-01-png,image,2016_12_01.png,2016_12_01x.png,01/12/2016,2016,Heron Is.,Turtle laying
-2017-03-01-png,image,2017_03_01.png,2017_03_01x.png,01/03/2017,2017,Komodo,Manta
-2018-04-01-png,image,2018_04_01.png,2018_04_01x.png,01/04/2018,2018,Coral Sea,Crest wave
-2018-10-01-png,image,2018_10_01.png,2018_10_01x.png,01/10/2018,2018,"Vicoria, Australia",Mornington
-2018-10-02-png,image,2018_10_02.png,2018_10_02x.png,02/10/2018,2018,"Vicoria, Australia",Cobbles
-2018-12-01-png,image,2018_12_01.png,2018_12_01x.png,01/12/2018,2018,Coral Sea,Mellish reef
-2018-12-02-png,image,2018_12_02.png,2018_12_02x.png,02/12/2018,2018,Coral Sea,Stylasterid
-2018-12-03-png,image,2018_12_03.png,2018_12_03x.png,03/12/2018,2018,Coral Sea,Grey reef
-2018-12-06-png,image,2018_12_06.png,2018_12_06x.png,06/12/2018,2018,Coral Sea,Brown Boobies
-2018-12-20-png,image,2018_12_20.png,2018_12_20x.png,20/12/2018,2018,"Crescent Head, NSW",Nurse shark
-2019-02-01-png,image,2019_02_01.png,2019_02_01x.png,01/02/2019,2019,Palau,Palau boat
-2019-02-02-png,image,2019_02_02.png,2019_02_02x.png,02/02/2019,2019,Palau,Lobophyllia
-2019-02-05-png,image,2019_02_05.png,2019_02_05x.png,05/02/2019,2019,Palau,Palau lakes
-2019-02-06-png,image,2019_02_06.png,2019_02_06x.png,06/02/2019,2019,Palau,Palau jelly
-2019-02-07-png,image,2019_02_07.png,2019_02_07x.png,07/02/2019,2019,Palau,Palau table
-2019-02-20-png,image,2019_02_20.png,2019_02_20x.png,20/02/2019,2019,Palau,Palau tree
-2019-02-21-png,image,2019_02_21.png,2019_02_21x.png,21/02/2019,2019,Palau,Palau caves
-2019-08-02-png,image,2019_08_02.png,2019_08_02x.png,02/08/2019,2019,Haleiwa,Galapagos shark
-2019-09-01-png,image,2019_09_01.png,2019_09_01x.png,01/09/2019,2019,Catalina,Kelp
-2019-09-02-png,image,2019_09_02.png,2019_09_02x.png,02/09/2019,2019,Catalina,Red kelpfish
-2019-09-05-png,image,2019_09_05.png,2019_09_05x.png,05/09/2019,2019,Catalina,Small kelpfish
-2020-02-23-png,image,2020_02_23.png,2020_02_23x.png,23/02/2020,2020,Makapu'u,Makapu'u
-2020-06-01-JPG,image,2020_06_01.JPG,2020_06_01x.JPG,01/06/2020,2020,Kona,Yellow Frogfish
-2020-06-02-JPG,image,2020_06_02.JPG,2020_06_02x.JPG,02/06/2020,2020,Kona,Orange Frogfish
+"","name","categories","image_path","preview","date","year","location"
+"1","2013-01-01-png","image","2013_01_01.png","2013_01_01x.png","2013/01/01","2013","Port Phillip Bay"
+"2","2013-01-02-png","image","2013_01_02.png","2013_01_02x.png","2013/01/02","2013","Port Phillip Bay"
+"3","2013-01-04-png","image","2013_01_04.png","2013_01_04x.png","2013/01/04","2013","Port Phillip Bay"
+"4","2013-02-01-png","image","2013_02_01.png","2013_02_01x.png","2013/02/01","2013","Port Phillip Bay"
+"5","2013-06-01-png","image","2013_06_01.png","2013_06_01x.png","2013/06/01","2013","Whitsundays"
+"6","2013-11-01-png","image","2013_11_01.png","2013_11_01x.png","2013/11/01","2013","Coral Sea"
+"7","2014-03-17-png","image","2014_03_17.png","2014_03_17x.png","2014/03/17","2014","Maldives"
+"8","2014-04-01-png","image","2014_04_01.png","2014_04_01x.png","2014/04/01","2014","Maldives"
+"9","2015-09-01-png","image","2015_09_01.png","2015_09_01x.png","2015/09/01","2015","Lizard"
+"10","2016-03-01-png","image","2016_03_01.png","2016_03_01x.png","2016/03/01","2016","Great Barrier Reef"
+"11","2016-04-01-png","image","2016_04_01.png","2016_04_01x.png","2016/04/01","2016","Great Barrier Reef"
+"12","2016-06-01-png","image","2016_06_01.png","2016_06_01x.png","2016/06/01","2016","Kauai"
+"13","2016-07-01-png","image","2016_07_01.png","2016_07_01x.png","2016/07/01","2016","Heron Is."
+"14","2016-12-01-png","image","2016_12_01.png","2016_12_01x.png","2016/12/01","2016","Heron Is."
+"15","2017-03-01-png","image","2017_03_01.png","2017_03_01x.png","2017/03/01","2017","Komodo"
+"16","2018-04-01-png","image","2018_04_01.png","2018_04_01x.png","2018/04/01","2018","Coral Sea"
+"17","2018-10-01-png","image","2018_10_01.png","2018_10_01x.png","2018/10/01","2018","Vicoria, Australia"
+"18","2018-10-02-png","image","2018_10_02.png","2018_10_02x.png","2018/10/02","2018","Vicoria, Australia"
+"19","2018-12-01-png","image","2018_12_01.png","2018_12_01x.png","2018/12/01","2018","Coral Sea"
+"20","2018-12-02-png","image","2018_12_02.png","2018_12_02x.png","2018/12/02","2018","Coral Sea"
+"21","2018-12-03-png","image","2018_12_03.png","2018_12_03x.png","2018/12/03","2018","Coral Sea"
+"22","2018-12-06-png","image","2018_12_06.png","2018_12_06x.png","2018/12/06","2018","Coral Sea"
+"23","2018-12-20-png","image","2018_12_20.png","2018_12_20x.png","2018/12/20","2018","Crescent Head, NSW"
+"24","2019-02-01-png","image","2019_02_01.png","2019_02_01x.png","2019/02/01","2019","Palau"
+"25","2019-02-02-png","image","2019_02_02.png","2019_02_02x.png","2019/02/02","2019","Palau"
+"26","2019-02-05-png","image","2019_02_05.png","2019_02_05x.png","2019/02/05","2019","Palau"
+"27","2019-02-06-png","image","2019_02_06.png","2019_02_06x.png","2019/02/06","2019","Palau"
+"28","2019-02-07-png","image","2019_02_07.png","2019_02_07x.png","2019/02/07","2019","Palau"
+"29","2019-02-20-png","image","2019_02_20.png","2019_02_20x.png","2019/02/20","2019","Palau"
+"30","2019-02-21-png","image","2019_02_21.png","2019_02_21x.png","2019/02/21","2019","Palau"
+"31","2019-08-02-png","image","2019_08_02.png","2019_08_02x.png","2019/08/02","2019","Haleiwa"
+"32","2019-09-11-JPG","image","2019_09_11.JPG","2019_09_11x.JPG","2019/09/11","2019","CA"
+"33","2019-09-15-png","image","2019_09_15.png","2019_09_15x.png","2019/09/15","2019","Catalina"
+"34","2019-09-16-png","image","2019_09_16.png","2019_09_16x.png","2019/09/16","2019","Catalina"
+"35","2019-09-17-png","image","2019_09_17.png","2019_09_17x.png","2019/09/17","2019","Catalina"
+"36","2020-02-23-png","image","2020_02_23.png","2020_02_23x.png","2020/02/23","2020","Makapu'u"
+"37","2020-06-01-JPG","image","2020_06_01.JPG","2020_06_01x.JPG","2020/06/01","2020","Kona"
+"38","2020-06-02-JPG","image","2020_06_02.JPG","2020_06_02x.JPG","2020/06/02","2020","Kona"
