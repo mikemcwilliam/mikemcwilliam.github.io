@@ -7,7 +7,7 @@ email: mjmcwilliam@outlook.com
 #baseurl: "/livingseas" # the subpath of your site, e.g. /blog
 url: "https://mikemcwilliam.github.io" # the base hostname & protocol for your site
 twitter_username: mikemcwilliam23
-github_username:  mjmcwilliam
+github_username:  mikemcwilliam
 
 # Build settings
 markdown: kramdown
