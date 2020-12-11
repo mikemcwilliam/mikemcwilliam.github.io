@@ -5,7 +5,6 @@ layout: default
 
 
 
-
   {% if paginator.page %}
     {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
     {% assign currentPage = paginator.page %}
@@ -19,8 +18,8 @@ layout: default
         {% cycle 'add row' : '<article class="row">', '', '' %}
             <div class="column column-33">
                 <div class="preview-panel">
-                  <a href="{{ site.baseurl }}/images/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}, {{ post.date | date: "%b %Y" }}">
-                    <img src="{{ site.baseurl }}/images/{{ post.preview }}" /></a>
+                  <a href="{{ site.baseurl }}/images/home/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}, {{ post.date | date: "%b %Y" }}">
+                    <img src="{{ site.baseurl }}/images/home/{{ post.preview }}" /></a>
                </div>
             </div>
     {% cycle 'end row' : '', '', '</article>' %}
