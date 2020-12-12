@@ -11,9 +11,10 @@ git commit -m "new thing"
 git push
 
 # Update gallery ----
-delete _gallery, add to _data csv. add images, run:
-bundle exec jekyll pagemaster posts
-
+1 - name image as date
+2 - run R script, 
+3 - bundle exec jekyll pagemaster posts
+[delete pots folder to delete?]
 
 
 

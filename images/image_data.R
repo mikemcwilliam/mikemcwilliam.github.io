@@ -57,7 +57,8 @@ dat$location<-c(
 "Catalina",
 "Makapu'u",
 "Kona",
-"Kona"
+"Kona",
+"Haleiwa"
 )
 
 
