@@ -8,16 +8,22 @@ img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
 
 small<-img[grepl("x", img)]
 large<-gsub("x","", small)
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)
+#large<-gsub(".{3}$", "", large)
+large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
+small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')
+small
+
 
 dat<-data.frame(name=gsub("_", "-", large))
 dat$name<-gsub("\\.","-",dat$name)
 dat$categories<-"image"
 dat$image_path<-large
 dat$preview<-small
+dat$LOC <- LOC
 dat$date<-substr(dat$preview,1, 10)
 dat$date<-gsub("_", "/", dat$date)
 dat$year<-substr(dat$date,1, 4)
-dat$LOC <- substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)
 
 # 3 letter name code (don't use x)
 dat$location<-NA
