@@ -8,18 +8,19 @@ order: 2
   My work uses traits such as physiological or demographic
    rates to understand how ecosystems work and how they're changing.
 </p><p>
-  <b> Latest papers:</b>
+  <b> Recent projects:</b>
 </p>
 
 
-{% for post in site.research %}
+{% for post in site.research reversed %}
 <article class="unit-article layout-post">
     <div class="unit-inner unit-article-inner">
         <div class="content">
             <div class="bd">
                 <div class="entry-content">
-                  <p style="text-align: center; margin-bottom: 0.1em"><b>{{post.title }}</b></p>
-                    <hr style="border:0.5px solid gray; margin-top: 0em"> </hr>
+                  <p style="text-align: center; margin-bottom: 0.1em"><b>{{post.title}}</b></p>
+                    <hr style="border:0.5px solid #c6c8cf; margin-top: 0em; margin-bottom: 0em"> </hr>
+                    <p style="text-align:right; color: #c6c8cf; font-size: 1em; margin-top: 0em; margin-bottom: 0.5em"><b>{{ post.date | date: "%b %Y"}}</b></p>
                     {{ post.content }}
                 </div><!-- entry-content -->
             </div><!-- bd -->
@@ -57,7 +58,7 @@ order: 2
     {% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="column column-33">
             <div class="preview-panel">
-                <a href="{{ post.url | prepend: site.baseurl }}">
+                <a href="{{ post.external }}">
                     <img src="{{ site.baseurl }}/images/research/{{ post.preview }}">
                 </a>
                 <div class="post-title">{{ post.title }}</div>
