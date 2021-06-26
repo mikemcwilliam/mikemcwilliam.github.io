@@ -8,7 +8,48 @@ order: 2
   My work uses traits such as physiological or demographic
    rates to understand how ecosystems work and how they're changing.
 </p><p>
-  <b> Some papers:</b>
+  <b> Latest papers:</b>
+</p>
+
+
+{% for post in site.research %}
+<article class="unit-article layout-post">
+    <div class="unit-inner unit-article-inner">
+        <div class="content">
+            <div class="bd">
+                <div class="entry-content">
+                  <p style="text-align: center; margin-bottom: 0.1em"><b>{{post.title }}</b></p>
+                    <hr style="border:0.5px solid gray; margin-top: 0em"> </hr>
+                    {{ post.content }}
+                </div><!-- entry-content -->
+            </div><!-- bd -->
+        </div><!-- content -->
+    </div><!-- unit-inner -->
+</article>
+
+{% endfor %}
+
+
+
+<hr style="border:1px solid gray"> </hr>
+
+
+
+<article class="unit-article layout-post">
+    <div class="unit-inner unit-article-inner">
+        <div class="content">
+            <div class="bd">
+                <div class="entry-content">
+                    {{ post.content }}
+                </div><!-- entry-content -->
+            </div><!-- bd -->
+        </div><!-- content -->
+    </div><!-- unit-inner -->
+</article>
+
+
+</p><p>
+  <b> Links to papers:</b>
 </p>
 
 
