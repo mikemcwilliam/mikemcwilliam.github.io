@@ -9,6 +9,19 @@ url: "https://mikemcwilliam.github.io" # the base hostname & protocol for your s
 twitter_username: mikemcwilliam23
 github_username:  mikemcwilliam
 
+author:
+  name: Mike McWilliam
+  twitter: mikemcwilliam23
+
+twitter:
+  username: mikemcwilliam23
+
+social:
+  name: Mike McWilliam
+  links:
+    - https://twitter.com/mikemcwilliam23
+    - https://github.com/mikemcwilliam
+
 # Build settings
 markdown: kramdown
 #permalink: pretty
