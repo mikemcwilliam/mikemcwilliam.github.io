@@ -9,10 +9,8 @@ img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
 small<-img[grepl("x", img)]
 large<-gsub("x","", small)
 LOC <- substr(large,nchar(large)-6, nchar(large)-4)
-#large<-gsub(".{3}$", "", large)
-large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
-small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')
-small
+#large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
+#small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')
 
 
 dat<-data.frame(name=gsub("_", "-", large))

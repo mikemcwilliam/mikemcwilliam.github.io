@@ -236,6 +236,195 @@ dat$location<-c(#
 "Port Phillip Bay",#
 "Port Phillip Bay",#
 "Port Phillip Bay",#
+"Whitsundays",#
+"Whitsundays",#
+"Coral Sea",#
+"Maldives",#
+"Maldives",#
+"Lizard",#
+"Great Barrier Reef",#
+"Great Barrier Reef",#
+"Kauai",#
+"Heron Is.",#
+"Heron Is.",#
+"Komodo",#
+"Coral Sea",#
+"Vicoria, Australia",#
+"Vicoria, Australia",#
+"Coral Sea",#
+"Coral Sea",#
+'Coral Sea',#
+"Coral Sea",#
+"Crescent Head, NSW",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Haleiwa",#
+"CA",#
+"Catalina",#
+"Catalina",#
+"Catalina",#
+"Makapu'u",#
+"Kona",#
+"Kona",#
+"Haleiwa",#
+"Kona",#
+"Kona",#
+)
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat#
+#
+dat$location<-c(#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Whitsundays",#
+"Whitsundays",#
+"Coral Sea",#
+"Maldives",#
+"Maldives",#
+"Lizard",#
+"Great Barrier Reef",#
+"Great Barrier Reef",#
+"Kauai",#
+"Heron Is.",#
+"Heron Is.",#
+"Komodo",#
+"Coral Sea",#
+"Vicoria, Australia",#
+"Vicoria, Australia",#
+"Coral Sea",#
+"Coral Sea",#
+'Coral Sea',#
+"Coral Sea",#
+"Crescent Head, NSW",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Haleiwa",#
+"CA",#
+"Catalina",#
+"Catalina",#
+"Catalina",#
+"Makapu'u",#
+"Kona",#
+"Kona",#
+"Haleiwa",#
+"Kona",#
+"Kona"#
+)
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat
+dat$location<-c(#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Whitsundays",#
+"Whitsundays",#
+"Coral Sea",#
+"Maldives",#
+"Maldives",#
+"Lizard",#
+"Great Barrier Reef",#
+"Great Barrier Reef",#
+"Kauai",#
+"Heron Is.",#
+"Heron Is.",#
+"Komodo",#
+"Coral Sea",#
+"Vicoria, Australia",#
+"Vicoria, Australia",#
+"Coral Sea",#
+"Coral Sea",#
+'Coral Sea',#
+"Coral Sea",#
+"Crescent Head, NSW",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Palau",#
+"Haleiwa",#
+"CA",#
+"Catalina",#
+"Catalina",#
+"Catalina",#
+"Makapu'u",#
+"Kona",#
+"Kona",#
+"Haleiwa",#
+"Kona",#
+"Kona"#
+)
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat#
+#
+dat$location<-c(#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Port Phillip Bay",#
+"Whitsundays",#
 "Whitsundays",#
 "Coral Sea",#
 "Maldives",#
@@ -274,6 +463,486 @@ dat$location<-c(#
 "Kona",#
 "Kona"#
 )#
+dat#
+#
+write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
+img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)
+large
+small
+dat<-data.frame(name=gsub("_", "-", large))
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)
+substr(dat$date,1, 4)
+substr(dat$image_path,nchar(dat$image_path)-3, nchar(dat$image_path))
+substr(dat$image_path,nchar(dat$image_path)-7, nchar(dat$image_path)-4)
+substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat$LOC <- substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)#
+#
+# 3 letter name code (don't use x)#
+dat$location<-NA#
+dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"#
+dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"#
+dat$location[dat$LOC=="NGB"]<-"Northern GBR, Australia"#
+dat$location[dat$LOC=="MAL"]<-"Maldives"#
+dat$location[dat$LOC=="LIZ"]<-"Lizard Is., Australia"#
+dat$location[dat$LOC=="CRL"]<-"Coral Sea, Australia"#
+dat$location[dat$LOC=="CGB"]<-"GBR, Australia"#
+dat$location[dat$LOC=="KAW"]<-"Kauai, HI"#
+dat$location[dat$LOC=="HER"]<-"Heron Is., Australia"#
+dat$location[dat$LOC=="KMO"]<-"Komodo, Indonesia"#
+dat$location[dat$LOC=="NSW"]<-"New South Whales, Australia"#
+dat$location[dat$LOC=="VIC"]<-"Victoria, Australia"#
+dat$location[dat$LOC=="PAL"]<-"Palau"#
+dat$location[dat$LOC=="CAL"]<-"California, USA"#
+dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
+dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
+dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
+dat$location[dat$LOC=="KON"]<-"Kona, HI"#
+dat
+write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat$LOC <- substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)#
+#
+# 3 letter name code (don't use x)#
+dat$location<-NA#
+dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"#
+dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"#
+dat$location[dat$LOC=="NGB"]<-"Northern GBR, Australia"#
+dat$location[dat$LOC=="MAL"]<-"Maldives"#
+dat$location[dat$LOC=="LIZ"]<-"Lizard Is., Australia"#
+dat$location[dat$LOC=="CRL"]<-"Coral Sea, Australia"#
+dat$location[dat$LOC=="CGB"]<-"GBR, Australia"#
+dat$location[dat$LOC=="KAW"]<-"Kauai, HI"#
+dat$location[dat$LOC=="HER"]<-"Heron Is., Australia"#
+dat$location[dat$LOC=="KMO"]<-"Komodo, Indonesia"#
+dat$location[dat$LOC=="NSW"]<-"New South Whales, Australia"#
+dat$location[dat$LOC=="VIC"]<-"Victoria, Australia"#
+dat$location[dat$LOC=="PAL"]<-"Palau"#
+dat$location[dat$LOC=="CAL"]<-"California, USA"#
+dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
+dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
+dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
+dat$location[dat$LOC=="KON"]<-"Kona, HI"#
+dat
+large
+LOC <- substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)
+LOC
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4)#
+large<-gsub(LOC,"", large)
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4)#
+large<-gsub(LOC,"", large)
+LOC
+large
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4)#
+large<-gsub(".3$","", large)#
+large
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+large<-gsub(LOC, "", large)#
+large
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+large<-gsub(".{3}$", "", large)#
+large
+N <- 1000000#
+x <- sample(0:1, N, replace = TRUE)#
+s <- paste(x, collapse = ",")#
+#
+# this is a vector of 10 strings#
+M <- 10#
+S <- rep(s, M)#
+#
+system.time(y <- strsplit(S, split = ","))
+N <- 1000000#
+x <- sample(0:1, N, replace = TRUE)#
+s <- paste(x, collapse = ",")#
+#
+# this is a vector of 10 strings#
+M <- 10#
+S <- rep(s, M)#
+#
+y <- strsplit(S, split = ",")
+N <- 1000#
+x <- sample(0:1, N, replace = TRUE)#
+s <- paste(x, collapse = ",")#
+#
+# this is a vector of 10 strings#
+M <- 10#
+S <- rep(s, M)
+S
+strsplit(S, split = ",")
+S
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 10), substr(large, ,12 nchar(x)), sep='')
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 10), substr(large,12 nchar(x)), sep='')
+paste(substr(large, 1, 10), substr(large,12 nchar(large)), sep='')
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 10), substr(large,12, nchar(large)), sep='')
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 11), substr(large,15, nchar(large)), sep='')
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 12), substr(large,15, nchar(large)), sep='')
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large-4))#
+#large<-gsub(".{3}$", "", large)#
+paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)
+large
+nchar(large)-
+nchar(large)
+nchar(large-4)
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)
+LOC
+paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
+paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)#
+#large<-gsub(".{3}$", "", large)#
+large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')#
+small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')#
+small
+LOC
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)#
+#large<-gsub(".{3}$", "", large)#
+large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')#
+small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')#
+small#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$LOC <- LOC#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat$LOC <- substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)#
+#
+# 3 letter name code (don't use x)#
+dat$location<-NA#
+dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"#
+dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"#
+dat$location[dat$LOC=="NGB"]<-"Northern GBR, Australia"#
+dat$location[dat$LOC=="MAL"]<-"Maldives"#
+dat$location[dat$LOC=="LIZ"]<-"Lizard Is., Australia"#
+dat$location[dat$LOC=="CRL"]<-"Coral Sea, Australia"#
+dat$location[dat$LOC=="CGB"]<-"GBR, Australia"#
+dat$location[dat$LOC=="KAW"]<-"Kauai, HI"#
+dat$location[dat$LOC=="HER"]<-"Heron Is., Australia"#
+dat$location[dat$LOC=="KMO"]<-"Komodo, Indonesia"#
+dat$location[dat$LOC=="NSW"]<-"New South Whales, Australia"#
+dat$location[dat$LOC=="VIC"]<-"Victoria, Australia"#
+dat$location[dat$LOC=="PAL"]<-"Palau"#
+dat$location[dat$LOC=="CAL"]<-"California, USA"#
+dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
+dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
+dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
+dat$location[dat$LOC=="KON"]<-"Kona, HI"#
+dat
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)#
+#large<-gsub(".{3}$", "", large)#
+large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')#
+small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')#
+small
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$LOC <- LOC#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+dat$LOC <- substr(dat$image_path,nchar(dat$image_path)-6, nchar(dat$image_path)-4)#
+#
+# 3 letter name code (don't use x)#
+dat$location<-NA#
+dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"#
+dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"#
+dat$location[dat$LOC=="NGB"]<-"Northern GBR, Australia"#
+dat$location[dat$LOC=="MAL"]<-"Maldives"#
+dat$location[dat$LOC=="LIZ"]<-"Lizard Is., Australia"#
+dat$location[dat$LOC=="CRL"]<-"Coral Sea, Australia"#
+dat$location[dat$LOC=="CGB"]<-"GBR, Australia"#
+dat$location[dat$LOC=="KAW"]<-"Kauai, HI"#
+dat$location[dat$LOC=="HER"]<-"Heron Is., Australia"#
+dat$location[dat$LOC=="KMO"]<-"Komodo, Indonesia"#
+dat$location[dat$LOC=="NSW"]<-"New South Whales, Australia"#
+dat$location[dat$LOC=="VIC"]<-"Victoria, Australia"#
+dat$location[dat$LOC=="PAL"]<-"Palau"#
+dat$location[dat$LOC=="CAL"]<-"California, USA"#
+dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
+dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
+dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
+dat$location[dat$LOC=="KON"]<-"Kona, HI"#
+dat#
+#
+write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)#
+#large<-gsub(".{3}$", "", large)
+substr(large,nchar(large)-6, nchar(large)-4)
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)#
+#large<-gsub(".{3}$", "", large)#
+large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')#
+small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')#
+small#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$LOC <- LOC#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+#
+# 3 letter name code (don't use x)#
+dat$location<-NA#
+dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"#
+dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"#
+dat$location[dat$LOC=="NGB"]<-"Northern GBR, Australia"#
+dat$location[dat$LOC=="MAL"]<-"Maldives"#
+dat$location[dat$LOC=="LIZ"]<-"Lizard Is., Australia"#
+dat$location[dat$LOC=="CRL"]<-"Coral Sea, Australia"#
+dat$location[dat$LOC=="CGB"]<-"GBR, Australia"#
+dat$location[dat$LOC=="KAW"]<-"Kauai, HI"#
+dat$location[dat$LOC=="HER"]<-"Heron Is., Australia"#
+dat$location[dat$LOC=="KMO"]<-"Komodo, Indonesia"#
+dat$location[dat$LOC=="NSW"]<-"New South Whales, Australia"#
+dat$location[dat$LOC=="VIC"]<-"Victoria, Australia"#
+dat$location[dat$LOC=="PAL"]<-"Palau"#
+dat$location[dat$LOC=="CAL"]<-"California, USA"#
+dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
+dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
+dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
+dat$location[dat$LOC=="KON"]<-"Kona, HI"#
+dat#
+#
+write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
+# generate image data .. #
+#
+img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
+#
+img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]#
+#
+small<-img[grepl("x", img)]#
+large<-gsub("x","", small)#
+LOC <- substr(large,nchar(large)-6, nchar(large)-4)#
+#large<-gsub(".{3}$", "", large)#
+#large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')#
+#small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')#
+#small#
+dat<-data.frame(name=gsub("_", "-", large))#
+dat$name<-gsub("\\.","-",dat$name)#
+dat$categories<-"image"#
+dat$image_path<-large#
+dat$preview<-small#
+dat$LOC <- LOC#
+dat$date<-substr(dat$preview,1, 10)#
+dat$date<-gsub("_", "/", dat$date)#
+dat$year<-substr(dat$date,1, 4)#
+#
+# 3 letter name code (don't use x)#
+dat$location<-NA#
+dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"#
+dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"#
+dat$location[dat$LOC=="NGB"]<-"Northern GBR, Australia"#
+dat$location[dat$LOC=="MAL"]<-"Maldives"#
+dat$location[dat$LOC=="LIZ"]<-"Lizard Is., Australia"#
+dat$location[dat$LOC=="CRL"]<-"Coral Sea, Australia"#
+dat$location[dat$LOC=="CGB"]<-"GBR, Australia"#
+dat$location[dat$LOC=="KAW"]<-"Kauai, HI"#
+dat$location[dat$LOC=="HER"]<-"Heron Is., Australia"#
+dat$location[dat$LOC=="KMO"]<-"Komodo, Indonesia"#
+dat$location[dat$LOC=="NSW"]<-"New South Whales, Australia"#
+dat$location[dat$LOC=="VIC"]<-"Victoria, Australia"#
+dat$location[dat$LOC=="PAL"]<-"Palau"#
+dat$location[dat$LOC=="CAL"]<-"California, USA"#
+dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
+dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
+dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
+dat$location[dat$LOC=="KON"]<-"Kona, HI"#
 dat#
 #
 write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
