@@ -41,17 +41,9 @@ exclude: ['old_scripts',  'notes.txt']
 
 collections:
   posts:
-    output: TRUE
-    source: gallery.csv
-    id_key: name
-    layout: post
-  research:
-   output: TRUE
-
-collections:
-  imgs:
     output: FALSE
     source: gallery.csv
     id_key: name
     layout: post
   research:
+    output: FALSE
