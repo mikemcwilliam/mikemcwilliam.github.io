@@ -21,7 +21,9 @@ git push
 
 ISSUES
 
-- Google search
+- Paginate only works on posts. Can't simply sitemap and remove posts by using _img collection instead. V2 works on anything, but isn't supported on GitHub.. 
+
+- Google search - currently works on Bing/GoGoDuck
 https://victor2code.github.io/blog/2019/07/04/jekyll-github-pages-appear-on-Google.html
 https://github.com/mmistakes/minimal-mistakes/issues/918
 add https
