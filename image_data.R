@@ -45,7 +45,7 @@ dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"
 dat$location[dat$LOC=="KON"]<-"Kona, HI"
 
 
-dat
+dat$name <- paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")
 
 write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
 
