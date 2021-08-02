@@ -1031,9 +1031,7 @@ dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
 dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
 dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
 dat$location[dat$LOC=="KON"]<-"Kona, HI"#
-dat#
-#
-write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
+dat
 # generate image data .. #
 #
 img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
@@ -1075,9 +1073,13 @@ dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
 dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
 dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
 dat$location[dat$LOC=="KON"]<-"Kona, HI"#
-dat#
-#
+dat
 write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
+gsub(dat$name,1,11)
+substr(dat$name,1,11)
+paste(substr(dat$name,1,11),substr(dat$name,16,18)
+paste(substr(dat$name,1,11),substr(dat$name,16,18))
+paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")
 # generate image data .. #
 #
 img<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images")#
@@ -1119,6 +1121,6 @@ dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"#
 dat$location[dat$LOC=="OAH"]<-"Oahu, HI"#
 dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"#
 dat$location[dat$LOC=="KON"]<-"Kona, HI"#
-dat#
+dat$name <- paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")#
 #
 write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv")
