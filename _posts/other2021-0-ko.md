@@ -7,7 +7,7 @@ LOC: KON
 date: other2021/
 year: othe
 location: Kona, HI
-order: '2'
+order: '3'
 permalink: "/posts/other2021-0-ko.html"
 layout: post
 ---
