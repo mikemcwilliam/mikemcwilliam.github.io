@@ -43,7 +43,7 @@ dat$location[dat$LOC=="CAT"]<-"Catalina Island, USA"
 dat$location[dat$LOC=="OAH"]<-"Oahu, HI"
 dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"
 dat$location[dat$LOC=="KON"]<-"Kona, HI"
-
+dat$location[dat$LOC=="SYD"]<-"Sydney, Australia"
 
 dat$name <- paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")
 
