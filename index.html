@@ -1,33 +1,45 @@
 ---
 layout: default
+title: MM
+description: Website for MM
+featured_image: /images/social.jpg
 ---
 
-
-
-
-  {% if paginator.page %}
-    {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
-    {% assign currentPage = paginator.page %}
-  {% else %}
-    {% assign offset = 0 %}
-    {% assign currentPage = 1 %}
-  {% endif %}
-
-  <div id="blogContainer" class="postContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
-    {% for post in site.posts limit:paginator.per_page offset:offset %}
-        {% cycle 'add row' : '<article class="row">', '', '' %}
-            <div class="column column-33">
-                <div class="preview-panel">
-                  <a href="{{ site.baseurl }}/images/diving/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}, {{ post.date | date: "%b %Y" }}">
-                    <img src="{{ site.baseurl }}/images/previews/{{ post.preview }}" /></a>
-               </div>
-            </div>
-    {% cycle 'end row' : '', '', '</article>' %}
-    {% endfor %}
-  </div>
-
-  {% assign postCount = site.posts | size %}
-  {% assign postsCovered = paginator.per_page | plus:offset %}
-  {% if postsCovered < postCount %}
-  <button class="loadMore">Older</button>
-  {% endif %}
+<div class="gallery" data-columns="3">
+  <img src="/images/demo/2022_03_06_MAU.JPG">
+	<img src="/images/demo/2022_03_05_MAU.JPG">
+	<img src="/images/demo/2022_02_02_OAH.JPG">
+	<img src="/images/demo/2022_02_04_OAH.JPG">
+	<img src="/images/demo/2021_12_16_SYD.JPG">
+	<img src="/images/demo/2021_12_03_SYD.JPG">
+	<img src="/images/demo/2021_12_01_SYD.JPG">
+	<img src="/images/demo/2021_11_04_OAH.JPG">
+	<img src="/images/demo/2021_10_01_OAH.JPG">
+	<img src="/images/demo/2021_09_19_OAH.JPG">
+	<img src="/images/demo/2021_09_18_OAH.JPG">
+  <img src="/images/demo/2021_07_19_KON.JPG">
+	<img src="/images/demo/2021_07_18_KON.JPG">
+	<img src="/images/demo/2021_07_10_KAU.JPG">
+	<img src="/images/demo/2021_07_06_KON.JPG">
+	<img src="/images/demo/2021_07_04_KON.JPG">
+	<img src="/images/demo/2021_07_03_KON.JPG">
+	<img src="/images/demo/2021_07_02_KON.JPG">
+	<img src="/images/demo/2021_06_06_KON.JPG">
+	<img src="/images/demo/2021_05_20_KON.JPG">
+	<img src="/images/demo/2021_05_08_KON.JPG">
+	<img src="/images/demo/2021_04_26_KON.JPG">
+	<img src="/images/demo/2021_04_07_KON.JPG">
+	<img src="/images/demo/2021_03_31_MAU.JPG">
+	<img src="/images/demo/2020_09_13_OAH.JPG">
+	<img src="/images/demo/2020_08_04_KON.JPG">
+	<img src="/images/demo/2020_06_02_KON.JPG">
+	<img src="/images/demo/2020_06_01_KON.JPG">
+	<img src="/images/demo/2020_05_08_OAH.JPG">
+	<img src="/images/demo/2020_03_02_OAH.JPG">
+	<img src="/images/demo/2019_09_17_CAT.png">
+	<img src="/images/demo/2019_09_16_CAT.png">
+	<img src="/images/demo/2019_09_15_CAT.png">
+	<img src="/images/demo/2019_09_11_CAL.JPG">
+	<img src="/images/demo/2019_09_03_OAH.JPG">
+	<img src="/images/demo/2019_08_02_HAL.png">
+</div>
