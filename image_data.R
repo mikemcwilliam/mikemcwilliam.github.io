@@ -5,7 +5,7 @@
 imgs<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images/home")
 
 
-cat(paste('<img src="/images/home/',rev(imgs),'">', sep=""))
+cat(paste('<img src="/images/home/',rev(imgs),'">\n', sep=""))
 
 #img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
 
