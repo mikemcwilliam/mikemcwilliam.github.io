@@ -11,12 +11,14 @@ menu_settings:
     - title: 'Home'
       url: '/'
     - title: 'Research'
-      url: '/research/'
+      url: '/blog/'
     - title: 'About'
       url: '/about'
+    - title: 'Contact'
+      url: '/contact'
 
 footer_settings:
-  footer_tagline: mjmcwilliam@outlook.com
+  footer_tagline:
 
 grid_settings:
   overlay_opacity: 0.8
