@@ -4,30 +4,28 @@ basic_settings:
 
 header_settings:
   logo_image:
-  logo_width: 200
+  logo_width: 100
 
 menu_settings:
   menu_items:
     - title: 'Home'
       url: '/'
     - title: 'Research'
-      url: '/blog/'
+      url: '/research/'
     - title: 'About'
       url: '/about'
-    - title: 'Contact'
-      url: '/contact'
 
 footer_settings:
   footer_tagline: mjmcwilliam@outlook.com
 
 grid_settings:
   overlay_opacity: 0.8
-  grid_spacing: 20
+  grid_spacing: 5
   content_alignment: bottom
 
 contact_settings:
-  form_action: ''
-  confirmation_url: '/thanks'
+  form_action: 'https://formspree.io/f/xyyopbrr'
+  confirmation_url: '/thankyou'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
 
