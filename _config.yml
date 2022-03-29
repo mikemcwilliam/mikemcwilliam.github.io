@@ -1,62 +1,49 @@
-site: https://mikemcwilliam.github.io
+# Site settings
+title: Mike McWilliam
+email: mjmcwilliam@outlook.com
+#description: > # this means to ignore newlines until "baseurl:"
+#  ...
+#baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "/livingseas" # the subpath of your site, e.g. /blog
+url: "https://mikemcwilliam.github.io" # the base hostname & protocol for your site
+twitter_username: mikemcwilliam23
+github_username:  mikemcwilliam
 
-url: https://mikemcwilliam.github.io
-baseurl:
+author:
+  name: Mike McWilliam
+  twitter: mikemcwilliam23
 
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
+twitter:
+  username: mikemcwilliam23
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+social:
+  name: Mike McWilliam
+  links:
+    - https://twitter.com/mikemcwilliam23
+    - https://github.com/mikemcwilliam
 
+# Build settings
 markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-sass:
-  style: compressed
+#permalink: pretty
 
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-seo-tag
+  - pagemaster
 
-paginate: 10
-paginate_path: "/blog/page:num/"
+#original ..
+paginate: 12
+#paginate_path: /page:num
 
-grid_alignments:
-  - top
-  - center
-  - bottom
+exclude: ['old_scripts',  'notes.txt']
+
+
+
+collections:
+  posts:
+    output: FALSE
+    source: gallery.csv
+    id_key: name
+    layout: post
+  research:

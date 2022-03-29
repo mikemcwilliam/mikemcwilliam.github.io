@@ -1,10 +1,4 @@
 
-# # CHANGES
-# Adding SEO Tag to plugins
-# Adding head file with SEO
-
-
-
 
 Dimensions: thumb: 200*200cm @ 10px/cm
 

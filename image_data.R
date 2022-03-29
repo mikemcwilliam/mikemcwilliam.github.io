@@ -2,32 +2,17 @@
 
 # generate image data .. 
 
-imgs<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images/home")
-
-
-cat(paste('<img src="/images/home/',rev(imgs),'">\n', sep=""))
+large<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images/diving")
+small<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images/previews")
 
 #img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# don't need... 
-
+#small<-img[grepl("x", img)]
+#large<-gsub("x","", small)
 
 LOC <- substr(large,nchar(large)-6, nchar(large)-4)
+#large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
+#small<-paste(substr(small, 1, 10), substr(small,15, nchar(small)), sep='')
 
 
 dat<-data.frame(name=gsub("_", "-", large))
@@ -76,7 +61,8 @@ dat$name <- paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")
 
 dat$order <- c(nrow(dat):1)
 
-#write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv", row.names=FALSE)
+
+write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv", row.names=FALSE)
 
 
 

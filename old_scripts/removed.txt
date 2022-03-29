@@ -1,0 +1,10 @@
+
+# scholar icon 
+
+<p>
+    <a href="https://scholar.google.com.au/citations?user=p7zc2l0AAAAJ&hl=en*">
+                            <span class="icon">
+                            {% include icons/googlescholar.svg %}
+                            </span>  &nbsp; <b> scholar </b>
+                          </a>
+                          </p>
