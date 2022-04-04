@@ -33,7 +33,7 @@ plugins:
   - pagemaster
 
 #original ..
-paginate: 12
+paginate: 24
 #paginate_path: /page:num
 
 exclude: ['old_scripts',  'notes.txt']
