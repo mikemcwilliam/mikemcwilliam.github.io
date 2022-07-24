@@ -2,8 +2,8 @@
 
 # generate image data .. 
 
-large<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images/diving")
-small<-list.files(path="~/Documents/PostDoc/mikemcwilliam.github.io/images/previews")
+large<-list.files(path="images/diving")
+#small<-list.files(path="images/previews")
 
 #img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
 
@@ -25,8 +25,7 @@ dat$date<-gsub("_", "/", dat$date_orig)
 dat$year<-substr(dat$date,1, 4)
 head(dat)
 
-
-dat$preview<-small[match(dat$date_orig, substr(small,1, 10))]
+#dat$preview<-small[match(dat$date_orig, substr(small,1, 10))]
 
 
 
@@ -62,7 +61,7 @@ dat$name <- paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")
 dat$order <- c(nrow(dat):1)
 
 
-write.csv(dat, "~/Documents/PostDoc/mikemcwilliam.github.io/_data/gallery.csv", row.names=FALSE)
+write.csv(dat, "_data/gallery.csv", row.names=FALSE)
 
 
 

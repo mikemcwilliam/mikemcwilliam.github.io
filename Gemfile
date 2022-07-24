@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'github-pages'
+
+gem 'jekyll', '3.8.5'
 
 group :jekyll_plugins do
-    gem 'jekyll-seo-tag'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-paginate'
-  #  gem 'jekyll-paginate-v2', '1.9.0'
-    gem 'pagemaster'
+  gem 'jekyll-paginate'
+  gem 'jekyll-sitemap'
+  gem 'pagemaster'
 end

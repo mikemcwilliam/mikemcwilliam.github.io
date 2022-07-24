@@ -1,33 +1,58 @@
 ---
 layout: default
+title: Home
+description: Photography gallery
+featured_image: /images/social.jpg
 ---
 
+{% if paginator.page %}
+	{% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
+	{% assign currentPage = paginator.page %}
+{% else %}
+	{% assign offset = 0 %}
+	{% assign currentPage = 1 %}
+{% endif %}
 
 
+<section class="listing">
 
-  {% if paginator.page %}
-    {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
-    {% assign currentPage = paginator.page %}
-  {% else %}
-    {% assign offset = 0 %}
-    {% assign currentPage = 1 %}
-  {% endif %}
+	<div class="content-wrap listing-wrap">
 
-  <div id="blogContainer" class="postContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
     {% for post in site.posts limit:paginator.per_page offset:offset %}
-        {% cycle 'add row' : '<article class="row">', '', '' %}
-            <div class="column column-33">
-                <div class="preview-panel">
-                  <a href="{{ site.baseurl }}/images/diving/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}, {{ post.date | date: "%b %Y" }}">
-                    <img src="{{ site.baseurl }}/images/previews/{{ post.preview }}" /></a>
-               </div>
-            </div>
-    {% cycle 'end row' : '', '', '</article>' %}
-    {% endfor %}
-  </div>
 
-  {% assign postCount = site.posts | size %}
-  {% assign postsCovered = paginator.per_page | plus:offset %}
-  {% if postsCovered < postCount %}
-  <button class="loadMore">Older</button>
-  {% endif %}
+
+				<article class="listing-item">
+
+					<a class="listing-item__link" href="{{ site.baseurl }}/images/diving/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}, {{ post.date | date: "%b %Y" }}" >
+
+						<div class="listing-item__image">
+							<img src="{{ site.baseurl }}/images/diving/{{ post.image_path }}" class="lazyload"">
+						</div>
+
+						<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">
+							<div class="listing-item__info">
+
+								<p class="listing-item__subtitle">{{ post.location }}</p>
+							</div>
+						</div>
+
+					</a>
+
+				</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
+
+{% if paginator.total_pages > 1 %}
+
+<section class="pagination">
+
+	<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large pagination__prev{% if paginator.previous_page %} pagination--on{% endif %}"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
+	<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large pagination__next{% if paginator.next_page %} pagination--on{% endif %}"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+</section>
+
+{% endif %}

@@ -1,4 +1,0 @@
-
-login > settings > developer code > tick all > replace with password during git push
-
-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
