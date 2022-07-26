@@ -1,6 +1,6 @@
-site: Board Jekyll Theme
+site: Mike McWilliam
 
-url:
+url: "https://mikemcwilliam.github.io"
 baseurl:
 
 collections:
@@ -56,7 +56,7 @@ plugins:
   - jekyll-sitemap
   - pagemaster
 
-paginate: 30
+paginate: 36
 paginate_path: "/page:num/"
 
 grid_alignments:
