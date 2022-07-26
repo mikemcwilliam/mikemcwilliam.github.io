@@ -1,3 +1,4 @@
+Dimensions: thumb: 200*200cm @ 10px/cm
 
 
 CODE
