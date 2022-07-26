@@ -56,8 +56,8 @@ plugins:
   - jekyll-sitemap
   - pagemaster
 
-#paginate: 20
-#paginate_path: "/page:num/"
+paginate: 30
+paginate_path: "/page:num/"
 
 grid_alignments:
   - top
