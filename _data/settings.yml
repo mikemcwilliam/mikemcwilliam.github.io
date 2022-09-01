@@ -4,7 +4,7 @@ basic_settings:
 
 header_settings:
   logo_image: /images/hispidose.png
-  logo_width: 50
+  logo_width: 40
 
 menu_settings:
   menu_items:

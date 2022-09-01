@@ -16,6 +16,7 @@ featured_image: /images/social.jpg
 
 <section class="listing">
 
+<!--<div id="blogContainer" class="postContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">-->
 	<div class="content-wrap listing-wrap">
 
     {% for post in site.posts limit:paginator.per_page offset:offset %}
@@ -43,8 +44,15 @@ featured_image: /images/social.jpg
 		{% endfor %}
 
 	</div>
-
+<!--	</div> -->
 </section>
+
+<!--{% assign postCount = site.posts | size %}
+{% assign postsCovered = paginator.per_page | plus:offset %}
+{% if postsCovered < postCount %}
+<button class="loadMore">Older</button>
+{% endif %}-->
+
 
 {% if paginator.total_pages > 1 %}
 
