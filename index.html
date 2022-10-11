@@ -19,12 +19,14 @@ layout: default
             <div class="column column-33">
                 <div class="preview-panel">
                   <a href="{{ site.baseurl }}/images/diving/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}, {{ post.date | date: "%b %Y" }}">
-                    <img src="{{ site.baseurl }}/images/previews/{{ post.preview }}" /></a>
+                    <img src="{{ site.baseurl }}/images/previews/{{ post.preview }}" />
+                  </a>
                </div>
             </div>
     {% cycle 'end row' : '', '', '</article>' %}
     {% endfor %}
   </div>
+
 
   {% assign postCount = site.posts | size %}
   {% assign postsCovered = paginator.per_page | plus:offset %}

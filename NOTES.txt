@@ -11,7 +11,7 @@ git commit -m "new thing"
 git push
 
 # Update gallery ----
-1 - name image as date 
+1 - name image as date
 2 - run R script (add loc to R script if new)
 3 - bundle exec jekyll pagemaster posts
 [delete pots folder to delete?]
