@@ -2,7 +2,7 @@
  * Site header
  */
  .wrapper .container {
-    max-width: 80rem;
+    max-width: 85rem;
 }
 
 .site-header {
@@ -30,7 +30,7 @@
 /**
  * override column size for mobile
  */
-@media (max-width: 40.0rem) {
+@media (max-width: 45.0rem) {
     .row .column.column-33, .row .column.column-34 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -56,7 +56,7 @@
  * Misc
  */
 .preview-panel {
-    padding: 1rem;
+    padding: 0.6rem;
     box-sizing: border-box;
     border: 1px solid $color-initial;
 
