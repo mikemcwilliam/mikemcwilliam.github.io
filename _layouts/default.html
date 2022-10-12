@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <main class="wrapper">
+
+      {% include header.html %}
+
+      <div class="container">
+        {{ content }}
+
+
+        {% include footer.html %}
+      </div>
+
+    </main>
+
+    {% include scripts.html %}
+
+    <script type="text/javascript" src="/js/lightbox-plus-jquery.js"></script>
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <script src="{{ site.siteurl }}/js/jquery-1.11.1.js"></script>
+    <script src="{{ site.siteurl }}/js/pagination.js"></script>
+
+  </body>
+
+</html>

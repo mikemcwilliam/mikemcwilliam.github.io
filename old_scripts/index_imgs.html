@@ -1,0 +1,34 @@
+---
+layout: default
+pagination:
+  enabled: true
+  collection: imgs
+---
+
+
+  {% if paginator.page %}
+    {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
+    {% assign currentPage = paginator.page %}
+  {% else %}
+    {% assign offset = 0 %}
+    {% assign currentPage = 1 %}
+  {% endif %}
+
+  <div id="blogContainer" class="postContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+    {% for img in site.imgs  limit:paginator.per_page offset:offset %}
+        {% cycle 'add row' : '<article class="row">', '', '' %}
+            <div class="column column-33">
+                <div class="preview-panel">
+                  <a href="{{ site.baseurl }}/images/{{ img.image_path }}" data-lightbox="home" data-title="{{ img.location }}, {{ img.date | date: "%b %Y" }}">
+                    <img src="{{ site.baseurl }}/images/{{ img.preview }}" /></a>
+               </div>
+            </div>
+    {% cycle 'end row' : '', '', '</article>' %}
+    {% endfor %}
+  </div>
+
+  {% assign postCount = site.imgs | size %}
+  {% assign postsCovered = paginator.per_page | plus:offset %}
+  {% if postsCovered < postCount %}
+  <button class="loadMore">Older</button>
+  {% endif %}

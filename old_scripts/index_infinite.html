@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="card--group" id="card-wrapper">
+    {%- if paginator.posts.size > 0 -%}
+    {%- for post in paginator.posts -%}
+
+
+    {% cycle 'add row' : '<div class="row">', '', '' %}
+        <div class="column column-33">
+            <div class="preview-panel">
+
+              <a href="{{ site.baseurl }}/images/{{ post.image_path }}" data-lightbox="home" data-title="{{ post.location }}">
+                <img src="{{ site.baseurl }}/images/{{ post.preview }}" /></a>
+
+           </div>
+        </div>
+{% cycle 'end row' : '', '', '</div>' %}
+
+
+
+    {%- endfor -%}
+{%- endif -%}
+</div>
+
+
+
+<script>
+    var postWrapperId = 'card-wrapper';
+    var paginatePath = '/page/'
+    new InfiniteScroll(paginatePath, postWrapperId);
+</script>
+
+
+
+
+
+
+# and this in default...
+
+    <script src='lib/InfiniteScroll.js'></script>
