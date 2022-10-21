@@ -5,10 +5,12 @@
 large<-list.files(path="images/diving")
 small<-list.files(path="images/previews")
 
-#img<-img[!img %in% c("close.png","loading.gif", "next.png", "prev.png"  )]
+remove<-c(large[grepl("x", large)],small[grepl("x", small)])
 
-#small<-img[grepl("x", img)]
-#large<-gsub("x","", small)
+large<-large[!large %in% remove]
+small<-small[!small %in% remove]
+
+
 
 LOC <- substr(large,nchar(large)-6, nchar(large)-4)
 #large<-paste(substr(large, 1, 10), substr(large,15, nchar(large)), sep='')
@@ -32,8 +34,8 @@ dat$preview<-small[match(dat$date_orig, substr(small,1, 10))]
 
 # 3 letter name code (don't use x)
 dat$location<-NA
-dat$location[dat$LOC=="ENG"]<-"England, UK"
 
+dat$location[dat$LOC=="MON"]<-"Monterey, USA"
 dat$location[dat$LOC=="FRA"]<-"Marseillan, France"
 dat$location[dat$LOC=="PPB"]<-"Port Phillip Bay, Australia"
 dat$location[dat$LOC=="WHT"]<-"Whitsundays, Australia"
