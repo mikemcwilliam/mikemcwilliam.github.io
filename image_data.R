@@ -60,6 +60,7 @@ dat$location[dat$LOC=="HAL"]<-"Haleiwa, HI"
 dat$location[dat$LOC=="KON"]<-"Kona, HI"
 dat$location[dat$LOC=="SYD"]<-"Sydney, Australia"
 dat$location[dat$LOC=="MAU"]<-"Maui, HI"
+dat$location[dat$LOC=="SUL"]<-"Sulawesi, Indonesia"
 
 dat$name <- paste(substr(dat$name,1,11),substr(dat$name,16,18), sep="")
 
