@@ -35,6 +35,7 @@ dat$preview<-small[match(dat$date_orig, substr(small,1, 10))]
 # 3 letter name code (don't use x)
 dat$location<-NA
 
+dat$location[dat$LOC=="POR"]<-"Portugal"
 dat$location[dat$LOC=="SCO"]<-"Scotland"
 dat$location[dat$LOC=="ENG"]<-"England"
 dat$location[dat$LOC=="MON"]<-"Monterey, USA"
